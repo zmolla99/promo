@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const [backgroundChanged, setBackgroundChanged] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
-  const [brand, setBrand] = useState("/src/assets/1.jpeg")
+  const [brand, setBrand] = useState("./assets/1.jpeg")
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -21,30 +21,30 @@ function App() {
   }, [backgroundChanged]);
 
   const changeBrandWithDelay = () => {
-    setBrand("/src/assets/1.jpeg");
+    setBrand("./assets/1.jpeg");
 
     setTimeout(() => {
-      setBrand("/src/assets/2.jpeg");
+      setBrand("./assets/2.jpeg");
     }, 500);
 
     setTimeout(() => {
-      setBrand("/src/assets/1.jpeg");
+      setBrand("./assets/1.jpeg");
     }, 1000);
 
     setTimeout(() => {
-      setBrand("/src/assets/2.jpeg");
+      setBrand("./assets/2.jpeg");
     }, 1500);
 
     setTimeout(() => {
-      setBrand("/src/assets/1.jpeg");
+      setBrand("./assets/1.jpeg");
     }, 2000);
 
     setTimeout(() => {
-      setBrand("/src/assets/2.jpeg");
+      setBrand("./assets/2.jpeg");
     }, 2500);
 
     setTimeout(() => {
-      setBrand("/src/assets/1.jpeg");
+      setBrand("./assets/1.jpeg");
     }, 3000);
   };
 
@@ -60,7 +60,7 @@ function App() {
     <div className="app-container">
       <div className={`top-third ${backgroundChanged ? 'red-background' : ''}`}>
         {showLogo && (
-          <img src="/src/assets/logo.png" alt="Logo" className="logo" />
+          <img src="./assets/logo.png" alt="Logo" className="logo" />
         )}
       </div>
       <div className={`mid-third ${backgroundChanged ? 'green-background' : ''}`}>
