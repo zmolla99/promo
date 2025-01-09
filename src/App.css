@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: breathingShadow 2s ease-in-out infinite;
+}
+
+@keyframes breathingShadow {
+    0% {
+        box-shadow: 0 0 10px rgb(245, 194, 64);
+    }
+
+    20% {
+        box-shadow: 0 0 30px rgb(245, 194, 64);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgb(245, 194, 64);
+    }
+}
+
+.top-third {
+    height: 30%;
+    transition: background-color 2s ease;
+}
+
+.mid-third {
+    height: 20%;
+    transition: background-color 2s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot-third {
+    height: 50%;
+    transition: background-color 2s ease;
+}
+
+.red-background {
+    background-color: rgb(253, 59, 59);
+    margin: 1%;
+}
+
+.green-background {
+    background-color: rgb(71, 193, 43);
+    margin: 1%;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.brand {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    height: 80%;
+}
+
+.text {
+    color: #000;
+    font-family: monospace;
+    font-weight: bolder;
+    font-style: oblique;
+}
